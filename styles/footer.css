@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    background-color: var(--bg-hero);
+    flex-wrap: wrap;
+}
+
+.logo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.pages, .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}

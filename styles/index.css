@@ -1,0 +1,119 @@
+@import url(./general.css);
+
+.signup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px 2px aliceblue;
+}
+
+@media screen and (max-width: 1400px) {
+    .signup-container {
+        width: 70vw;
+    }
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .signup-container {
+        width: 90vw;
+        top: 15%;
+    }
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.signup, .image {
+    flex: 1;
+}
+
+.signup {
+    padding: 10px 20px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.text h2 {
+    font-size: 18px;
+}
+
+.text p {
+    font-size: 12px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.continue {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: start;
+    margin-top: 10%;
+}
+
+.google, .facebook {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 24px;
+    justify-content: center;
+}
+
+.or {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.email, .password {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    outline: none;
+    width: 100%;
+    padding: 8px 3px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.signup-button {
+    padding: 15px 0;
+    background-color: crimson;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}

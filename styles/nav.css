@@ -1,0 +1,113 @@
+
+@import url(./general.css);
+
+.icon {
+    max-width: 30px;
+}
+
+@media screen and (min-width: 1095px) {
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+@media screen and (max-width:1095px) {
+    .links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1095px) {
+    .links {
+        display: flex;
+    }
+}
+
+.disabled {
+    display: none;
+}
+
+.mobile {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.logo .logo-item {
+    background-color: var(--green);
+    color: white;
+    padding: 5px 10px;
+}
+
+.logo .logo-text {
+    color: var(--deep);
+    font-weight: bold;
+}
+
+.links {
+    align-items: center;
+    gap: 40px;
+}
+
+ul {
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.guide {
+    background-color: var(--green);
+    padding: 8px 32px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+    nav {
+        padding-inline: 100px;
+        padding-block: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+nav {
+        padding-inline: 30px;
+        padding-block: 25px;
+    }
+}

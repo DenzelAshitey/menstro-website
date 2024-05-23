@@ -1,0 +1,63 @@
+@import url(./general.css);
+@import url(./nav.css);
+
+
+
+h2 {
+    font-size: 36px;
+}
+
+
+
+p {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 20px;
+    color: var(--text)
+}
+
+
+
+span, p {
+    font-size: 18px;
+}
+
+h2, h4 {
+    color: var(--deep);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-block: 20px;
+    padding-inline: 6px;
+}
+
+article {
+    display:flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: start;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 15px;
+    }
+    span {
+        font-size: 15px;
+    }
+}
